@@ -20,13 +20,13 @@ The constrained conditions for a successful triplet PSs include four parts:
 - SA ≤ 4.0
 
 
-###Task 1 
+### Task 1 
 
 
 ```
 cd Frag_MD_and_Frag_GD_as_fragment_based_model
 
-#### 1.0 preparing
+# 1.0 preparing
 
 python 00_train_prior_Transformer.py --train-data {your_training_data_path} --valid-data {your_valid_data_path} --save-prior-path {path_to_save_prior_model}
 
@@ -36,7 +36,7 @@ python 01_prior_Transformer_generating_molecules.py --prior {piror_model_path} -
 
 
 
-#### 2.0 train and prediction
+# 2.0 train and prediction
 
 ##### Frag_GD and Frag_GB
 
@@ -58,13 +58,13 @@ python 2_train_agent_Frag_MB.py  --num-steps 5000 --batch-size 128 --middle {pat
 ```
 
 
-###Task 2
+### Task 2
 
 ```
 cd MD_and_GD_as_char_based_model
 
 
-#### 1.0 preparing
+# 1.0 preparing
 
 python 00_train_prior_Transformer.py --train-data {your_training_data_path} --valid-data {your_valid_data_path} --save-prior-path {path_to_save_prior_model}
 
@@ -74,9 +74,9 @@ python 01_prior_Transformer_generating_molecules.py --prior {piror_model_path} -
 
 
 
-#### 2.0 train and prediction
+# 2.0 train and prediction
 
-##### GD and GB
+# GD and GB
 
 python 1_train_prior_GD.py --train-data {your_training_data_path} --save-middle-path {path_to_save_middle_model}
 
@@ -84,7 +84,7 @@ python 2_train_agent_GD.py  --num-steps 5000 --batch-size 128 --middle {path_of_
 
 python 2_train_agent_GB.py  --num-steps 5000 --batch-size 128 --middle {path_of_middle_model} --agent {path_to_save_agent_model} ---save-file-path{save_smiles}
 
-##### MD and MB
+# MD and MB
 
 python 1_train_prior_MD.py --train-data {your_training_data_path} --save-middle-path {path_to_save_middle_model}
 
