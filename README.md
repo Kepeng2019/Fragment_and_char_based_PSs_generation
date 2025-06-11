@@ -2,6 +2,19 @@
 Effective Generation of Heavy-Atom-Free Triplet Photosensitizers Containing Multiple Intersystem Crossing Mechanisms Based on Machine Learning
 
 
+### 📦 Download Data
+
+The dataset used in this project is publicly available via Zenodo:
+
+🔗 [Download from Zenodo (DOI: 10.5281/zenodo.15638748)](https://zenodo.org/records/15638748)
+
+Please download and unzip the file into the `./data/` directory:
+
+```bash
+unzip data.zip -d ./data/
+
+
+
 ## Environment
 - python = 3.8.3
 - pytroch = 1.6.0
