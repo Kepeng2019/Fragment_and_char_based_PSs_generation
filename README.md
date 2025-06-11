@@ -12,7 +12,7 @@ Please download and unzip the file into the `./data/` directory:
 
 ```bash
 unzip data.zip -d ./data/
-
+```
 
 
 ## Environment
